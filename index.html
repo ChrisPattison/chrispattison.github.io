@@ -11,15 +11,21 @@
   </head>
   <body>
     
-    <h1>Coming Soon</h1>
-    <dl class="tabs" data-tab>
-      <dd>About</dd>
-      <dd>Projects</dd>
-      <dd>What's New?</dd>
+    <div id="banner" class="row">
+      <div class="large-8 columns"><img src="img/banner-med.png" id="bannerimg"/></div>
+      <div class="large-4 columns"><div id="contactbox">
+        <a href="https://linkedin.com/in/chpattison"><div class="contactlink"><img src="img/icons/linkedin.png"/><p class="contactlinktext">LinkedIn</p></div></a>
+      </div></div>
+    </div>
+    <dl class="tabs" id="bannertabs" data-tab>
+      <dd class="tabbutton"><a href="index.html">About</a></dd>
+      <dd class="tabbutton"><a href="projects.html">Projects</a></dd>
+      <dd class="tabbutton"><a href="new.html">What's New?</a></dd>
+      <dd class="tabbutton"><a href="freelance.html">Freelance</a></dd>
     </dl>
-    <a href="doc/resume/chris.pattison.pdf">resume</a>
     
     <script src="js/vendor/jquery.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
