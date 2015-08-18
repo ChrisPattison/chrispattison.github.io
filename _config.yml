@@ -3,3 +3,4 @@ exclude:
   - /doc/*.log
   - /doc/*.synctex.gz
   - /doc/*.tex
+  - /concept/*
