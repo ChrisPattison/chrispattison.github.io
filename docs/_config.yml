@@ -18,57 +18,38 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Christopher A. Pattison
-author: Christopher A. Pattison < >
-logo: /assets/img/logo.png
+title: Some noise
+author: 
+  name: Christopher A. Pattison
+  email: cpattison@berkeley.edu
+# logo: /assets/img/headshot.png
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi! I am currently a Postdoctoral Researcher in the Quantum Pod
-  at the Simons Institute for the Theory of Computing.
-  I am primarily interested in practical and theoretical aspects of quantum fault-tolerance
-  including quantum computer architecture and applications to
-  quantum computational complexity theory
+  A blog on various aspects of quantum error correction and fault-tolerance.
 
 
 # Build settings
-theme: minima
+# Use remote-theme plugin to load `minima` repository. But first, ensure the `theme` key is disabled.
+# theme: minima
+remote_theme: "jekyll/minima"
+
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+
+# markdown: kramdown
+# mathjax: true
 
 minima:
   skin: auto
-  # nav_pages:
-  #   - about.md
   date_format: "%b %d, %Y"
   social_links:
-    - icon: github
-      url: "https://github.com/ChrisPattison"
-    # - icon: x-twitter
-    #   url: "https://x.com/__chrispattison"
     - icon: bluesky
+      title: Bluesky
       url: "https://bsky.app/profile/chris-pattison.bsky.social"
     - icon: google-scholar
+      title: "Google Scholar"
       url: "https://scholar.google.com/citations?user=4neYf8oAAAAJ&hl=en"
+    - icon: github
+      title: Github
+      url: "https://github.com/ChrisPattison"
 
-    # github: samarsault
-    # linkedIn: in/samarsault # format: locale/username
-
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
